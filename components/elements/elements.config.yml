@@ -1,0 +1,14 @@
+title: Try Fractal
+context:
+    text: "2021"
+    sectionTitle: "section title"
+    sectionBody: "Would result in the resolved, aggregate context of the component looking like"
+    links: 
+      - label: "About"
+        href: "sss.com"
+      - label: "GitHub"
+        href: "#"
+      - label: "Chat"
+        href: "#"
+  
+

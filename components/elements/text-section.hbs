@@ -1,0 +1,15 @@
+<section class="{{#if class}}{{class}}{{/if}}">
+    <div class="text-section--img">
+        <img src="https://demo.fractal.build/pictures/bubbles.jpg" alt="image">
+    </div>
+    <div class="text-section--body">
+        <h1>{{ sectionTitle }}</h1>
+        <p>{{ sectionBody }}</p>
+        <div class="text-body--actions">
+            {{#each buttons}}
+             {{> '@button' }}
+            {{/each}}
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,14 @@
+title: Try Fractal
+context:
+    text: Click
+    sectionTitle: "section title"
+    sectionBody: "Would result in the resolved, aggregate context of the component looking like"
+    buttons:
+        - label: "Learn More"
+          modifier: "default"
+          scr: "google.com"
+        - label: "See More"
+          modifier: "primary"
+          scr: "sdsd.com"
+
+

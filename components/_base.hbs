@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    {{#block "head"}}
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{ path '/css/global.css' }}">
+    {{/block}}
+</head>
+
+<body>
+    {{render '@navbar'}}
+    <main>
+        {{#block "body"}}
+        <h1>Hello World</h1>
+        {{/block}}
+    </main>
+    {{render '@footer'}}
+</body>
+
+</html>
