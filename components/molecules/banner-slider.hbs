@@ -1,0 +1,18 @@
+<div class="blog-slider__container">
+    {{#each slides}}
+    <div class="blogSlides fade">
+        <div class="blog-slider__numbertext">{{numbertext}}</div>
+        <img src="{{ imgSrc }}" alt="{{imgAlt}}">
+        <div class=" blog-slider__text">{{text}}
+        </div>
+    </div>
+    {{/each}}
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div class="blogSlider__dots" style="text-align:center">
+    {{#each slides}}
+    <span class="blogSlider__dots--dot" onclick="currentSlide({{math @index " +" 1}})"></span>
+    {{/each}}
+</div>

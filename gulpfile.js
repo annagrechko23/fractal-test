@@ -5,8 +5,8 @@ const fractal      = require('./fractal.config.js');
 const logger       = fractal.cli.console;
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob     = require('gulp-sass-glob');
-const plumber      = require('gulp-plumber');
-const notify       = require('gulp-notify');
+const concat      = require('gulp-concat');
+const uglify       = require('gulp-uglify');
 const path         = require('path');
 const browserSync  = require('browser-sync');
 // Specific Task
@@ -19,9 +19,21 @@ function gulpSass() {
 }
 gulp.task(gulpSass);
 
+function gulpJs() {
+    return gulp
+    .src(['assets/*.js'])
+    .pipe(uglify())
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('public/js'))
+    .pipe(browserSync.stream());
+}
+gulp.task(gulpJs);
+
 
 gulp.task('watch', function(){
     gulp.watch('assets/scss/**/*.scss', gulp.series('gulpSass'));
+    gulp.watch('assets/*.js', gulp.series('gulpJs'));
+
 });
 gulp.task('fractal:start', function(){
     const server = fractal.web.server({

@@ -10,5 +10,18 @@ context:
         - label: "See More"
           modifier: "primary"
           scr: "sdsd.com"
+    slides:
+        - numbertext: "1/3"
+          imgSrc: "https://www.dropbox.com/s/6i60hcgrz7yatl5/nexus-6-2770-001.jpg?raw=1"
+          imgAlt: "Caption First"
+          text: "Caption Text"
+        - numbertext: "2/3"
+          imgSrc: "https://www.dropbox.com/s/wu9u6l53z3q6zpa/date.jpg?raw=1"
+          imgAlt: "Caption Second"
+          text: "Caption Two"
+        - numbertext: "3/3"
+          imgSrc: "https://www.dropbox.com/s/c7vg753l95iv7g8/photo-bg-04.jpg?raw=1"
+          imgAlt: "Caption Third"
+          text: "Caption Three"
 
 
